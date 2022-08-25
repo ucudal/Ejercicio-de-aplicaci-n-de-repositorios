@@ -13,6 +13,40 @@ namespace ClassLibrary
     /// </summary>
     public class Train
     {
+        //variable de clase
+        private static int contador = 0;
+
+        //variable de instancia y metodo de acceso
+         public string identificador {get;set;}
+    
+        //constructor de la clase
+        public Train(string identificador){
+            contador++;
+            Console.WriteLine("Se ejecuta el constructor.");
+        }
+
+        //metodos get y set para la variable contador
+         public int Contador {
+            get
+            {
+             return Train.contador;
+            }
+
+            set
+            {
+             Train.contador = value;
+            }
+        }
+  
+
+        //Desconstructor
+        ~Train(){
+            contador--;
+            Console.WriteLine("Se ejecuta el desconstructor");
+        }
+
+       
+
         /// <summary>
         /// Obtiene un valor que indica si las maquinas del tren han sido encendidas o no.
         /// </summary>
