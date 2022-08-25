@@ -23,12 +23,12 @@ namespace ConsoleApplication
             //var train = new Train("identificador1");
             //train.StartEngines();
 
-            /*for (int i = 0; i <= 100; i++){
+            /*for (int i = 0; i < 100; i++){
                 var train = new Train("identificador1");
                 Console.WriteLine(train.Contador);
             }*/
 
-            for (int i = 0; i <= 10000000; i++){
+            for (int i = 0; i < 10000000; i++){
                 var train = new Train("identificador2");
                 Console.WriteLine(train.Contador);
             }
